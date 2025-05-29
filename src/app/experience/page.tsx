@@ -1,10 +1,10 @@
 import Navbar from '@/components/Navbar'
 
-export default function ContactPage() {
+export default function ExperiencePage() {
   return (
     <>
       <Navbar />
-      {/* Content for Contact page */}
+      {/* Content for Experiences page */}
     </>
   )
 }
