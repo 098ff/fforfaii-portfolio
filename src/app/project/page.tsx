@@ -1,10 +1,10 @@
 import Navbar from '@/components/Navbar'
 
-export default function ContactPage() {
+export default function ProjectPage() {
   return (
     <>
       <Navbar />
-      {/* Content for Contact page */}
+      {/* Content for Projs page */}
     </>
   )
 }
