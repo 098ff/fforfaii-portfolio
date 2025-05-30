@@ -3,11 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-
   --color-primary: #F2F3DF;
   --color-secondary: #FAFAFA;
+  --color-tertiary: #dcd8bd;
   --color-logo: #3D4D30;
   --color-brown: #A9604F;
   --color-yellow-hover: #ada488;
