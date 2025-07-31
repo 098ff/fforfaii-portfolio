@@ -22,6 +22,17 @@ ul {
     margin: 0;
 }
 
+/* ##################################################### */
+/* Navigation Bar */
+/* ##################################################### */
+
+.nav-bar {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
 .nav-bar ul {
     position: absolute;
     top: 50px;
@@ -75,4 +86,146 @@ ul {
 .nav-item:hover p {
     color: var(--Secondary-500);
     font-weight: 800;
+}
+
+/* ##################################################### */
+/* Section A */
+/* ##################################################### */
+
+#Abtme-section-A {
+    background-color: var(--Primary-500);
+    padding: 160px 100px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.elem-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.git-click {
+    position: relative;
+    min-height: 90px;
+    width: 90px;
+}
+.git-1 {
+    position: absolute;
+    left: 16px;
+    top: -5px;
+}
+.git-2 {
+    position: absolute;
+    top: 20px;
+}
+.git-3 {
+    position: absolute;
+    top: 24px;
+    left: 32px
+}
+
+.skill-comp {
+    position: relative;
+    min-height: 30px;
+    width: 465px;
+}
+.skill-comp img {
+    height: 40px;
+    position: absolute;
+}
+.skill-1 {
+    transform: rotate(-16.55deg);
+}
+.skill-2 {
+    top: -10px;
+    left: 80px;
+}
+.skill-3 {
+    left: 140px;
+    transform: rotate(-10deg);
+}
+.skill-4 {
+    top: 5px;
+    left: 200px;
+}
+.skill-5 {
+    transform: rotate(8deg);
+    left: 270px;
+}
+.skill-6 {
+    top: -12px;
+    left: 375px;
+}
+
+.intro-text {
+    display: flex;
+    justify-content: flex-end;
+}
+.intro-text h1 {
+    text-align: right;
+    font-size: 100px;
+    color: white;
+    line-height: 115px;
+}
+
+.whoiam {
+    position: relative;
+}
+.who-1 {
+    position: absolute;
+    left: -50px;
+}
+.who-2 {
+    position: absolute;
+}
+.who-3 {
+    position: absolute;
+    width: 340px;
+    left: 55px;
+}
+
+.hero {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+}
+.hero-left {
+    display: flex;
+    flex-direction: column;
+}
+.hero-right {
+    position: relative;
+    min-width: 420px;
+    min-height: 500px;
+}
+.me-1 {
+    position: absolute;
+    width: 320px;
+}
+.me-2 {
+    position: absolute;
+    top: -50px;
+    left: 250px;
+    width: 115px;
+}
+.me-3 {
+    position: absolute;
+    top: 350px;
+    left: 210px;
+}
+.load {
+    position: absolute;
+    top: 420px;
+    right: 190px;
+    width: 320px;
+}
+
+.contact-shortcut {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    color: var(--Secondary-500);
 }
