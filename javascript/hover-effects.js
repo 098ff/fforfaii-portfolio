@@ -1,3 +1,5 @@
+// Script for special hover effect
+
 document.addEventListener("DOMContentLoaded", () => {
 
     // Aboutme-GithubClick

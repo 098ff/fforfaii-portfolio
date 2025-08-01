@@ -104,6 +104,9 @@ section {
 #Abtme-section-A {
     position: relative;
     background-color: var(--Primary-500);
+    background-image: url('/images/gradient.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% + 200px) center;
     padding: 120px 100px 0px 100px;
     display: flex;
     flex-direction: column;
