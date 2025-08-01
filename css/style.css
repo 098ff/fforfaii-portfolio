@@ -22,6 +22,15 @@ ul {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+section {
+  height: 100vh;
+  overflow: hidden;
+}
+
 /* ##################################################### */
 /* Navigation Bar */
 /* ##################################################### */
@@ -35,7 +44,7 @@ ul {
 
 .nav-bar ul {
     position: absolute;
-    top: 50px;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -93,11 +102,11 @@ ul {
 /* ##################################################### */
 
 #Abtme-section-A {
+    position: relative;
     background-color: var(--Primary-500);
-    padding: 160px 100px 24px;
+    padding: 120px 100px 0px 100px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
 }
 
 .elem-top {
@@ -116,15 +125,18 @@ ul {
     position: absolute;
     left: 16px;
     top: -5px;
+    transition: transform 0.4s ease;
 }
 .git-2 {
     position: absolute;
     top: 20px;
+    transition: transform 0.4s ease;
 }
 .git-3 {
     position: absolute;
     top: 24px;
-    left: 32px
+    left: 32px;
+    transition: transform 0.4s ease;
 }
 
 .skill-comp {
@@ -177,14 +189,19 @@ ul {
 .who-1 {
     position: absolute;
     left: -50px;
+    top: -10px;
+    transition: transform 0.4s ease;
 }
 .who-2 {
     position: absolute;
+    top: -6px;
+    transition: transform 0.4s ease;
 }
 .who-3 {
     position: absolute;
     width: 340px;
     left: 55px;
+    transition: transform 0.4s ease;
 }
 
 .hero {
@@ -210,22 +227,39 @@ ul {
     top: -50px;
     left: 250px;
     width: 115px;
+    transition: transform 0.4s ease;
 }
 .me-3 {
     position: absolute;
     top: 350px;
     left: 210px;
+    transition: transform 0.4s ease;
 }
 .load {
     position: absolute;
     top: 420px;
     right: 190px;
     width: 320px;
+    transition: transform 0.4s ease;
 }
 
 .contact-shortcut {
+    position: absolute;
     display: flex;
     flex-direction: row;
     gap: 30px;
+    bottom: 40px;
+}
+
+.cont-1 {
     color: var(--Secondary-500);
+}
+.cont-1:hover {
+    color: var(--Tertiary-600);
+}
+.cont-2 {
+    color: var(--Secondary-500);
+}
+.cont-2:hover {
+    color: var(--Tertiary-600);
 }
