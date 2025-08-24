@@ -232,9 +232,8 @@ body {
 /* ##################################################### */
 #Abtme-section-B {
     position: relative;
-    background-color: var(--Primary-500);
     padding: 100px 100px;
-    gap: 40px;
+    gap: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -409,6 +408,7 @@ body {
     align-items: center;
     width: 100%;
     gap: 20px;
+    margin-bottom: 50px;
 }
 
 .topic-2B {
@@ -416,6 +416,7 @@ body {
     width: fit-content;
     background-color: var(--Secondary-500);
     border-radius: 100px;
+    margin-top: 10px;
     margin-bottom: 25px;
 }
 
