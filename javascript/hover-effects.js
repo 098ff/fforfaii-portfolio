@@ -72,14 +72,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Aboutme-EducationCard
     const eduCards = document.querySelectorAll('.edu-card');
-    
-    // ตำแหน่งของ corner squares
+
     const positions = [
         'top-left', 'top-right',
         'right-center', 'bottom-right', 'bottom-center',
         'bottom-left', 'left-center'
     ];
-    
+
     eduCards.forEach(card => {
         positions.forEach(position => {
             const square = document.createElement('div');
@@ -87,4 +86,22 @@ document.addEventListener("DOMContentLoaded", () => {
             card.appendChild(square);
         });
     });
+
+    // Aboutme-Skills
+    const skillObjects = document.querySelectorAll('.skill-obj');
+
+    skillObjects.forEach(obj => {
+        obj.addEventListener('mouseenter', () => {
+            skillObjects.forEach(o => {
+                if (o !== obj) {
+                    o.classList.add('dimmed');
+                }
+            });
+        });
+
+        obj.addEventListener('mouseleave', () => {
+            skillObjects.forEach(o => o.classList.remove('dimmed'));
+        });
+    });
+
 });
