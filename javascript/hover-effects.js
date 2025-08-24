@@ -70,4 +70,21 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // Aboutme-EducationCard
+    const eduCards = document.querySelectorAll('.edu-card');
+    
+    // ตำแหน่งของ corner squares
+    const positions = [
+        'top-left', 'top-right',
+        'right-center', 'bottom-right', 'bottom-center',
+        'bottom-left', 'left-center'
+    ];
+    
+    eduCards.forEach(card => {
+        positions.forEach(position => {
+            const square = document.createElement('div');
+            square.className = `corner-square ${position}`;
+            card.appendChild(square);
+        });
+    });
 });
