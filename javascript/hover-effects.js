@@ -1,3 +1,5 @@
+// Script for special hover effect
+
 document.addEventListener("DOMContentLoaded", () => {
 
     // Aboutme-GithubClick
@@ -67,5 +69,39 @@ document.addEventListener("DOMContentLoaded", () => {
             abt_starsmEl.style.transform = "translate(0, 0) rotate(0deg)";
         });
     }
+
+    // Aboutme-EducationCard
+    const eduCards = document.querySelectorAll('.edu-card');
+
+    const positions = [
+        'top-left', 'top-right',
+        'right-center', 'bottom-right', 'bottom-center',
+        'bottom-left', 'left-center'
+    ];
+
+    eduCards.forEach(card => {
+        positions.forEach(position => {
+            const square = document.createElement('div');
+            square.className = `corner-square ${position}`;
+            card.appendChild(square);
+        });
+    });
+
+    // Aboutme-Skills
+    const skillObjects = document.querySelectorAll('.skill-obj');
+
+    skillObjects.forEach(obj => {
+        obj.addEventListener('mouseenter', () => {
+            skillObjects.forEach(o => {
+                if (o !== obj) {
+                    o.classList.add('dimmed');
+                }
+            });
+        });
+
+        obj.addEventListener('mouseleave', () => {
+            skillObjects.forEach(o => o.classList.remove('dimmed'));
+        });
+    });
 
 });
